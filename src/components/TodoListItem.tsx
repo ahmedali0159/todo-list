@@ -14,7 +14,7 @@ export const TodoListItem: React.FC<Props> = ({todo, toggleTodo}) => {
     return (
         <div>
             
-            <li>
+            <li style={{listStyle:'none'}}>
                 <label style={{textDecoration: todo.complete ? "line-through" : undefined}}>
                     <input onClick={() => {
                         toggleTodo(todo)
